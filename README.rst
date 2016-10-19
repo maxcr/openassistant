@@ -1,28 +1,23 @@
 OpenAssistant
 =============
 
-OpenAssistant is an evolving open source artificial intelligence agent able 
-to interact in basic conversation and automate an increasing number of tasks.
-
 Maintained by the `OpenAssistant <http://www.openassistant.org/>`__ 
-working group lead by `Andrew Vavrek <http://www.vavrek.com/>`__, this software 
-is an extension of `Blather <https://gitlab.com/jezra/blather>`__ 
-by `Jezra <http://www.jezra.net/>`__, `Kaylee <https://github.com/Ratfink/kaylee>`__ 
-by `Clayton G. Hobbs <https://bzratfink.wordpress.com/>`__, and includes work 
-done by `Jonathan Kulp <http://jonathankulp.org/>`__.
 
 
-Dependencies
+
+
+Installation
 ------------
 
 * `Arch Linux <https://www.archlinux.org/>`_ or `Ubuntu Linux <http://openassistant.org/forum/support/ubuntu-16-04-installation/>`_ (Testing Soon on `macOS <https://www.apple.com/macos>`_)
-* `Python 3.5 <https://www.python.org/downloads>`__
-* `PocketSphinx 5PreAlpha <https://github.com/cmusphinx/pocketsphinx>`__
-* `GStreamer-1.0 <https://github.com/GStreamer/gstreamer>`__
-* `GStreamer-1.0 Base Plugins <https://github.com/GStreamer/gst-plugins-base>`__
-* `Python-GObject <https://wiki.gnome.org/action/show/Projects/PyGObject>`__
-* `Python-Requests <https://pypi.python.org/pypi/requests>`__
 
+`mkdir -p ~/src && git clone https://github.com/maxcr/openassistant ~/src/`
+`yaourt https://aur.archlinux.org/pocketsphinx.git`
+`sudo pacman -S festival festival-english festival-us
+echo "(Parameter.set 'Audio_Required_Format 'aiff)
+(Parameter.set 'Audio_Method 'Audio_Command)
+(Parameter.set 'Audio_Command \"paplay $FILE --client-name=Festival --stream-name=Speech\")" > ~/.festivalrc
+`cd ~/src && bash ./assistant.sh`
 
 Useful Tools
 ------------
