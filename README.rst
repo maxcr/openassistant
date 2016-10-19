@@ -12,11 +12,15 @@ Installation
 * `Arch Linux <https://www.archlinux.org/>`_ or `Ubuntu Linux <http://openassistant.org/forum/support/ubuntu-16-04-installation/>`_ (Testing Soon on `macOS <https://www.apple.com/macos>`_)
 
 `mkdir -p ~/src && git clone https://github.com/maxcr/openassistant ~/src/`
+
 `yaourt https://aur.archlinux.org/pocketsphinx.git`
-`sudo pacman -S festival festival-english festival-us
+
+`sudo pacman -S festival festival-english festival-us`
+
 echo "(Parameter.set 'Audio_Required_Format 'aiff)
 (Parameter.set 'Audio_Method 'Audio_Command)
 (Parameter.set 'Audio_Command \"paplay $FILE --client-name=Festival --stream-name=Speech\")" > ~/.festivalrc
+
 `cd ~/src && bash ./assistant.sh`
 
 Useful Tools
