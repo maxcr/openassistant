@@ -23,7 +23,7 @@ echo "(Parameter.set 'Audio_Required_Format 'aiff)
 
 (Parameter.set 'Audio_Command \\"paplay $FILE --client-name=Festival --stream-name=Speech\\")" > ~/.festivalrc
 
-`cd ~/src && bash ./assistant.sh`
+`cd ~/src/openassistant && bash ./assistant.sh`
 
 Useful Tools
 ------------
