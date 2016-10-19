@@ -19,7 +19,7 @@ Installation
 
 echo "(Parameter.set 'Audio_Required_Format 'aiff)
 (Parameter.set 'Audio_Method 'Audio_Command)
-(Parameter.set 'Audio_Command \"paplay $FILE --client-name=Festival --stream-name=Speech\")" > ~/.festivalrc
+(Parameter.set 'Audio_Command \\"paplay $FILE --client-name=Festival --stream-name=Speech\\")" > ~/.festivalrc
 
 `cd ~/src && bash ./assistant.sh`
 
