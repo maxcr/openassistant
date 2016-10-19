@@ -13,7 +13,7 @@ Installation
 
 `mkdir -p ~/src && git clone https://github.com/maxcr/openassistant ~/src/`
 
-`yaourt https://aur.archlinux.org/pocketsphinx.git`
+`yaourt pocketsphinx`
 
 `sudo pacman -S festival festival-english festival-us`
 
